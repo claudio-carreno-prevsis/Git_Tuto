@@ -1,0 +1,28 @@
+Tutorial
+Ciclo de vida desde la creación de un repo hasta modificaciones
+
+1.- Se crea un repo online, se agrega descripción y readme
+Crear directorio1
+
+2.- Se crea directorio en máquina local
+mkdir directorio1
+
+3.- Se clona el repo remoto en el directorio local
+git clone https://github.com/ruta/directorio1
+
+4.- Se crean archivos de manera local (como éste) y luego se suben
+git add .
+git commit -m "Códigos básicos"
+git log (para ver commit id)
+git tag 1.0.0 commit_id (número consultado antes)
+git push origin --tags (sube con todos los tags)
+
+5.- Crear un branch o cambiarse a branch1
+git checkout -b branch1
+
+6.- Descargar modificaciones remotas
+git pull 
+
+7.- Borrar tag1
+local -> git tag -d tag1
+remoto -> git push origin :refs/tags/tag1
